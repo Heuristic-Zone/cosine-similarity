@@ -29,6 +29,10 @@ def cosineSimilarity(v1, v2):
     return dot_product / (magnitude1 * magnitude2)
 
 
+def getDegree(similarityValue):
+    angle_in_radians = math.acos(similarityValue)
+    return math.degrees(angle_in_radians)
+
 def start() : 
     
     sentence = "The man is from america is going"
@@ -36,15 +40,9 @@ def start() :
 
     vector1, vector2 = build_sentence_vector(sentence, sentence_)
     similarity = cosineSimilarity(vector1, vector2)
-
+    degree =   getDegree(similarity);
     print("Vectors : ", vector1, vector2)
     print("Similarity : ", similarity)
-
-    angle_in_radians = math.acos(similarity)
-
-    print("Angle in radian : ", angle_in_radians)
-
-    degree =  math.degrees(angle_in_radians)
     print("Degree : ", degree)
 
 
