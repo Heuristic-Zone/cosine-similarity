@@ -11,4 +11,6 @@ we will pass the content of each string into the build_sentence_vector function.
 
 - `build_sentence_vector(sentence1, sentence2)` converts string passed into it and generate a vector.
 
-- `cosineSimilarity(v1, v2)` takes in 2 vector and print out the similarity between the 2 vectors. 
+- `cosineSimilarity(v1, v2)` takes in 2 vector and generate the similarity between the 2 vectors. 
+
+- `getSimilarityDegree(similarity)` takes in the similarity value and convert it to a dwgree value.
